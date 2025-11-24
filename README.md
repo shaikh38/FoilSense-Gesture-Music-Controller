@@ -57,5 +57,9 @@ The system allows you to control Spotify playback using physical gestures detect
 ---
 
 # 🧩 System Architecture
+[ Foil Sensor ] → [ ESP32 Capacitive Touch ] → (Serial over USB)
+        → [ Python Gesture Listener ] → [ ML Classifier ] → [ Spotify API ]
+                                        ↓
+                                      [ GUI Updates ]
 
 
