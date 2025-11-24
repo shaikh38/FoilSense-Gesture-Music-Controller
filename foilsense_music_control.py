@@ -8,6 +8,7 @@ from spotipy.oauth2 import SpotifyOAuth
 import requests
 from io import BytesIO
 import serial
+import os
 
 # Spotify credentials
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
@@ -215,5 +216,6 @@ if __name__ == "__main__":
     threading.Thread(target=serial_reader, args=(app,), daemon=True).start()
 
     root.mainloop()
+
 
 
