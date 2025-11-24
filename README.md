@@ -1,4 +1,4 @@
-# FoilSense-Gesture-Music-Controller
+
 # FoilSense Gesture Music Controller
 
 A real-time gesture-controlled music interface built using  ESP32 capacitive touch sensing, a **Python Tkinter GUI**, **serial communication**, and a **machine-learning gesture classifier**.  
