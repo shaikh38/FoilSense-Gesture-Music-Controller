@@ -10,8 +10,8 @@ from io import BytesIO
 import serial
 
 # Spotify credentials
-CLIENT_ID = '3ef696ea5d554627867d5ee5b338e265'
-CLIENT_SECRET = 'a4e3525dc2eb42a9a8a696d8921acf81'
+CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 REDIRECT_URI = 'http://127.0.0.1:8888/callback/'
 SCOPE = 'user-read-playback-state user-modify-playback-state'
 
@@ -215,4 +215,5 @@ if __name__ == "__main__":
     threading.Thread(target=serial_reader, args=(app,), daemon=True).start()
 
     root.mainloop()
+
 
